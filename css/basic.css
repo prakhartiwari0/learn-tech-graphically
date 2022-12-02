@@ -1,0 +1,127 @@
+/* TYPOGRAPHY */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-hue: 205;
+    --primary-blue-color: hsl(var(--primary-hue), 50%, 50%);
+    --primary-background-color: hsl(0, 0%, 100%);
+    --primary-text-color: hsl(0, 0%, 50%);
+    --primary-bgc-text-color: hsl(0, 0%, 100%);
+    
+    --primary-font-family: 'Roboto Mono', monospace;
+}
+
+
+.darkmode{
+    
+    --primary-blue-color: hsl(var(--primary-hue), 80%, 70%);
+    --primary-background-color: hsl(0, 0%, 10%);
+    --primary-text-color: hsl(0, 0%, 80%);
+    --primary-bgc-text-color: hsl(0, 0%, 10%);
+    
+}
+
+.toggle-dark-mode-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+
+.flex-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.complete-center-items{
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* GOTOP BUTTON */
+
+.goTop{
+    color: var(--primary-bgc-text-color);
+    background-color: var(--primary-blue-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 0.5em 0.5em;
+    text-align: center;
+
+    box-shadow: 0px 0px 5px var(--primary-background-color);
+}
+.goTop span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg-illustrations{
+    position: fixed;
+    z-index: -5;
+    opacity: 0.4;
+    border: 2px solid var(--primary-blue-color);
+    height: 250px;
+    width: 250px;
+}
+
+
+.bg-il-1{
+    top: 1em;
+    bottom: 0em;
+    right: 0em;
+    left: 0em;
+}
+
+.bg-il-2{
+    height: 150px;
+    width: 150px;
+    top: 15em;
+    right: 1em;
+    transform: skew(30deg);
+}
+
+.bg-il-3{
+    transform: rotate(40deg);
+    bottom: 1em;
+    left: 10em;
+    
+}
+.bg-il-4{
+    top: 1em;
+    right: 15em;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+
+
+
+.circle{
+    border-radius: 100%;
+
+}
+.square{
+
+}
+.rectangle{
+    width: 700px;
+}

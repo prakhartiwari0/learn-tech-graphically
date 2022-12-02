@@ -1,0 +1,4 @@
+const searchInput = document.querySelector("")
+
+
+
